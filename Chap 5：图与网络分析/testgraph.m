@@ -1,0 +1,11 @@
+M = inf;
+V = [0,0;2,0;4,0;2,2;4,2;6,0];
+C = [ 0,10, M, 4, M, M;
+      10, 0,13, M, 4, M;
+      M, 13, 0, M, M,10;
+      M, M, 4, 0, M, M;
+      M, M, M, M, 0, 4;
+      M, M, M, M, M, 0];
+E = m_transMatrix(C);
+m_grPlot(V,E,'d','%d','%d');
+title('initialization graph');
